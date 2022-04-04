@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_page_popular_games",
+  "info": {
+    "name": "popularGames",
+    "icon": "grin-stars",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "highlight": {
+      "type": "component",
+      "repeatable": false,
+      "component": "page.highlight",
+      "required": true
+    },
+    "games": {
+      "collection": "game"
+    }
+  }
+}
