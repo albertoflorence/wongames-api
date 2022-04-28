@@ -22,7 +22,7 @@
       "type": "string"
     },
     "total_in_cents": {
-      "type": "integer",
+      "type": "biginteger",
       "required": true
     },
     "user": {
