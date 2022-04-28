@@ -27,8 +27,10 @@ const getWishlist = async (ctx) => {
   const wishlist =
     (await strapi.services.wishlist.findOne({ user: token.id })) || {};
 
-  wishlist.user = { id: token.id };
-
+  if (!wishlist.user) {
+    wishlist.user = { id: token.id };
+    wishlist.games = [];
+  }
   return wishlist;
 };
 
