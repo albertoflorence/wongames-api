@@ -11,7 +11,7 @@ RUN npx browserslist@latest --update-db
 
 COPY . .
 
-ENV NODE_ENV production
+ENV NODE_ENV development
 ENV DATABASE_CLIENT=postgres
 
 RUN npm run build
