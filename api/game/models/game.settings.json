@@ -87,6 +87,9 @@
       "collection": "platform",
       "via": "games",
       "dominant": true
+    },
+    "discount": {
+      "type": "decimal"
     }
   }
 }

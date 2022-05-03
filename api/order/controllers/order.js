@@ -104,7 +104,6 @@ const getUserInfo = async (ctx) => {
     .query("user", "users-permissions")
     .findOne({ id }, "Authenticated");
 
-  console.log(user);
   return user;
 };
 
