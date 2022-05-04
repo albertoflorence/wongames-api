@@ -129,7 +129,10 @@ const handlePaymentIntent = async ({ amount, cart }) => {
 };
 
 const getTotalInCents = (games) =>
-  Math.round(games.reduce((total, game) => total + game.price, 0) * 100);
+  Math.round(
+    games.reduce((total, game) => total + (game.discount || game.price), 0) *
+      100
+  );
 
 const getCartItems = async (cart) => {
   if (!cart)
